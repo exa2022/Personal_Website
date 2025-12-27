@@ -1,0 +1,155 @@
+/* Main container for work experience */
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    /* background: linear-gradient(to right, rgba(189, 187, 187, 0.8), rgba(128, 0, 0, 0.8)); */
+    background: linear-gradient(to right, rgba(80, 0, 0, 0.9), rgba(128, 0, 0, 0.8)); /* Maroon to dark red gradient */
+   
+    min-height: 100vh;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    margin-top: -40px;
+}
+
+
+/* Title of the section */
+.project {
+    font-size: 48px;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+/* Row container for cards */
+.proj_row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 125px;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* Card styling */
+.proj_row .card {
+    background-color: #ffffff;;
+    padding: 15px;
+    padding-bottom: 5px;
+    text-align: left;
+    border-radius: 15px;
+    height: auto;
+    width: 1200px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card .dat2
+{
+    font-size:14px;
+    color:#888d8f;
+    font-weight: 400;
+    margin-top: -15px;
+    bottom: -5px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.card .dat2 .dat
+{
+    font-size: 14px;
+    color:black;
+    font-weight: 500;
+}
+
+
+
+
+/* Hover effect on card */
+.proj_row .card:hover {
+    background-color: #F5F5F5;;
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Card title styling */
+.proj-card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #8B0000;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/* Description text styling */
+.proj-description {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+    flex-grow: 1;
+    font-family: 'Roboto', sans-serif;
+    display: none;
+    margin-left: 10px;
+}
+
+/* Position info styling */
+
+.proj-description.show
+{
+    display: block;
+}
+
+.github-description {
+    font-size: 20px;
+    color: #333333;
+    line-height: 1.5;
+    flex-grow: 1;
+    font-family: 'Roboto', sans-serif;
+    display: none;
+    margin-left: 10px;
+    margin-top: -8px;
+}
+
+.github-description.show
+{
+    display: block;
+}
+
+
+.toggle-btn
+{
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #500000
+}
+
+.toggle-btn:hover
+{
+    color: #8B0000;
+}
+
+
+.proj-card-title::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: #500000;
+    margin-top: 10px;
+}

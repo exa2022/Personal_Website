@@ -1,0 +1,114 @@
+/* Container holding the entire About Me section */
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Slightly reduced gap for a tighter layout */
+    height: 91vh;
+    padding: 40px 60px;
+    background: linear-gradient(to right, #f0f0f0, maroon); /* Softer background with purple tones */
+    background-size: cover;
+
+}
+
+
+
+/* Left side (image section) */
+.left {
+    flex: 1;
+    width: 50%;
+    height: 58%;
+    margin-top: 40px;
+    border-radius: 15%; /* Circular effect */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px maroon; /* Soft shadow for a floating effect */
+}
+
+/* Profile image inside the circle */
+.ph {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+
+
+
+/* Right side (text section) */
+.right {
+    flex: 1;
+    width: 65%; /* Adjusted width */
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 15px black;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* animation: move-uppy-down 3s ease-in-out infinite; */
+
+}
+
+/* @keyframes move-uppy-down
+{
+  0%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(-35px);
+  }
+  100%{
+      transform: translateY(0);
+  }
+} */
+
+
+.right:hover h1{
+    color:maroon;
+    transition-duration: 0.5s;
+}
+
+/* Intro section */
+.intro h3 {
+    font-size: 13px; /* Larger font size for better readability */
+    font-family: 'Arial', sans-serif; /* Modern, clean font */
+    line-height: 1.8;
+    color: #1e1c1c; /* Darker text for better contrast */
+    margin-top: 0;
+    padding-left: 5px;
+    margin-bottom:40px;
+}
+
+.about-me-container h1::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: #500000;
+    margin-top: 10px;
+}
+
+
+/* Main header styling */
+.about-me-container h1 {
+    color: maroon; /* Maroon color for headings */
+    font-size: 32px;
+    font-family: 'Georgia', serif; /* Classic serif font for a professional look */
+    margin-top: 0;
+    margin-left: 10px;
+    font-weight: 600;
+    letter-spacing: 1px; /* Slight letter spacing for a sophisticated feel */
+}
+
+
+
+

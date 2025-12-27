@@ -1,0 +1,142 @@
+/* Ensure the body and html elements take up full height */
+  
+  /* Wrapper for the content and footer */
+
+  /* Footer Styles */
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    flex: 1; /* This will push the footer down */
+  }
+
+
+  .footer-container {
+    background-color: black;
+    padding: 5px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for separation */
+    text-align: flex-start; /* Center the text in the footer */
+    display: flex;
+    color:white;
+    height:auto;
+    bottom:0;
+    position: relative;
+  }
+
+  .footer-container h1
+  {
+    color:white;
+    margin-top: 5px;
+  }
+
+  .footer-container h1::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background-color: rgb(127, 207, 233);
+    margin-top: 10px;
+  }
+
+  .site-map{
+    margin-left: 580px;
+    margin-top: 10px;
+  }
+
+
+  .socials
+  {
+    margin-top: 10px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .socials i
+  {
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+    margin-bottom: 5px;
+    color:white;
+  }
+
+  .socials #linkedin:hover
+  {
+    color:rgb(68, 142, 246);
+    transition-duration: 0.5s;
+  }
+
+  ul
+  {
+    list-style: none;
+    padding: 0;
+    margin-top: -10px;
+  }
+
+  .site-map li
+  {
+    margin-bottom: 2px;
+  }
+
+  .socials li
+  {
+    margin-bottom: 2px;
+  }
+
+
+  .site-map  li a{
+    text-decoration: none;
+    color:white;
+    position: relative;
+  }
+
+  .site-map  li a:hover{
+    transition-duration: 0.5s;
+    color:rgb(7, 183, 241);
+  }
+
+  .site-map li a::after
+  {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(180, 227, 243);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .site-map li a:hover::after
+  {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .socials  li a{
+    text-decoration: none;
+    color:white;
+  }
+
+  .socials  li a:hover{
+    transition-duration: 0.5s;
+    color:rgb(7, 183, 241);
+  }
+
+  .copyright{
+    margin-top: 110px;
+    margin-left: 500px;
+    font-size: 14px;
+    position: absolute;
+  }
+
+  

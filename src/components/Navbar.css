@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+.nav .site-title
+{
+    font-family: 'Allura', cursive;
+    color:white;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav a.site-title
+{
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+
+.nav {
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    
+    top:0;
+    left:0;
+
+    color: white;
+    background-color: black;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 60px;
+    padding: 0 2rem; 
+    box-shadow: 0 2px 5px rgba(238, 234, 234, 0.1);
+}
+
+
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 2rem; 
+    justify-content: space-evenly;
+}
+
+
+.nav a {
+    color: white;
+    font-weight: 600; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.nav ul li a
+{
+    color: white;
+    font-weight: 600; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+.nav ul li {
+    display: inline-block;
+    position: relative;
+    padding: 0px;
+}
+
+
+

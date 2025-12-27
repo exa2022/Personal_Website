@@ -1,0 +1,123 @@
+.Contact-container 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px;
+    /* background: linear-gradient(to right, #f0f0f0, maroon); Softer background with purple tones */
+    background-color: #f0f0f0;
+}
+
+.Contact-container h1
+{
+    top:50px;
+    left:60px;
+    position: absolute;
+}
+
+
+.Contact-container h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 6px;
+    background-color: #500000;
+    margin-top: 10px;
+}
+
+.mid-container
+{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    display: flex;
+}
+
+.req
+{
+    color:red;
+    font-weight: bold;
+}
+
+.mid-container .form
+{
+    margin-left: -540px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+input
+{
+    width: 600px;
+    max-width: 800px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #aaa8a8;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea
+{
+    width: 600px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #aaa8a8;
+    font-size: 1rem;
+    box-sizing: border-box;
+    height:200px;
+}
+
+label
+{
+    font-weight: 700;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+    border-color: maroon;
+    box-shadow: 0px 0px 5px maroon;
+    border-width: 1px;
+}
+
+.wrappy .button1
+{
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align: center;
+    width:20%;
+    background-color:rgb(3, 166, 192);
+    color:white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wrappy .button1:hover
+{
+    background-color: black;
+    transition-duration: 0.3s;
+}
+
+.map iframe{
+    flex:1;
+    min-height: 300px;
+    min-width: 300px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 500px;
+    max-height:400px;
+    box-shadow: 0 4px 18px black;
+    border-radius: 10px;
+    left: 700px;
+    position: absolute;
+    margin-top: 40px;
+}
