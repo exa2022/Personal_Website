@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -17,6 +18,7 @@ function App() {
     
       <Navbar/>
 
+      <Analytics />
       
       <Routes>
         <Route
